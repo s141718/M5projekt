@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detections - {{ period }}</title>
+</head>
+<body>
+    <h1>Detections for the last {{ period }}</h1>
+    <ul>
+        {% for detection in detections %}
+        <li>{{ detection[0] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to index</a>
+</body>
+</html>
