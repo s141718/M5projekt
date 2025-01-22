@@ -6,8 +6,6 @@ app = Flask(__name__)
 
 @app.route('/report/<datetime>')
 def report(datetime):
-    date, time = datetime.split(' ')
-
     conn = sqlite3.connect('data.db')
     c = conn.cursor()
     c.execute("INSERT INTO detections (datetime) VALUES (?)", (datetime,))
