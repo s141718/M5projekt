@@ -1,5 +1,5 @@
-# M5projekt
-## DIoT24
+# DIoT24
+## M5projekt
 
 - Förutsättnigar: SQLite, Flask
 - Skapa databas med: python createdb.py 
