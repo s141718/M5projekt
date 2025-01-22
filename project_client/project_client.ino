@@ -79,5 +79,5 @@ void loop() {
     } else {
       digitalWrite(ledPin, LOW); // Turn the LED off
   }
-  delay(1000); // Wait for 1 second before checking again
+  delay(500); // Wait for 0.5 second before checking again
 }
