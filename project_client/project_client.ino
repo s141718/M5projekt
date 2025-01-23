@@ -48,6 +48,7 @@ void sendDateTime(const String& datetimeStr) {
   if (client.connect(server, 5000)) { // Ensure the port matches your Flask server
     client.println("GET " + url + " HTTP/1.1");
     client.println("Host: " + String(server));
+    client.println("Connection: close");
     client.println();
     client.stop(); // Close connection
   } else {
@@ -79,5 +80,5 @@ void loop() {
     } else {
       digitalWrite(ledPin, LOW); // Turn the LED off
   }
-  delay(500); // Wait for 0.5 second before checking again
+  delay(1000); // Wait for 1 second before checking again
 }
