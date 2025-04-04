@@ -2,7 +2,7 @@
 #include "WiFiS3.h"
 
 char ssid[] = "FreshTomato24";
-char pass[] = "stefan141718";
+char pass[] = "***REMOVED***";
 char server[] = "192.168.1.42";
 
 Ds1302 rtc(5, 7, 6); // Initialize with pins: RST, CLK, DAT
